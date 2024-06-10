@@ -15,8 +15,8 @@ finish-args:
 
 cleanup:
   - /include
-  - "*.a"
-  - "*.la"
+  - '*.a'
+  - '*.la'
   - /lib/pkgconfig
 
 modules:
@@ -40,17 +40,18 @@ modules:
         url: https://github.com/sezero/quakespasm
         # commenting out until a release has been made that includes the appstream and desktop files
         # tag: quakespasm-0.96.1
-        commit: 5b56bc420d4518dff662c09257b91cc7869b2bcb
+        commit: cb5c02c21b0dbbcc6f1e080ffc84b88cc9e06a78
         x-checker-data:
           type: git
           tag-pattern: ^quakespasm-(.*)$
+        tag: quakespasm-0.96.2
       - type: script
         dest-filename: quakespasm.sh
         commands:
           # Verify game data is present
-          - ls $XDG_DATA_HOME/id1/pak0.pak || zenity --error --text "Please ensure $XDG_DATA_HOME/id1/ exists
-            and contains at least Quake's pak0.pak game data file."
-            --ok-label "Close" --width=400
+          - ls $XDG_DATA_HOME/id1/pak0.pak || zenity --error --text "Please ensure
+            $XDG_DATA_HOME/id1/ exists and contains at least Quake's pak0.pak game
+            data file." --ok-label "Close" --width=400
           # launch the game
           - /app/bin/quakespasm -basedir $XDG_DATA_HOME "$@"
     buildsystem: simple
