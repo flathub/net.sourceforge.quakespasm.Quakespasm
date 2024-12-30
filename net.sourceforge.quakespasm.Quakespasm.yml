@@ -5,8 +5,6 @@ sdk: org.freedesktop.Sdk
 command: quakespasm.sh
 
 finish-args:
-  # hardware 3D
-  - --device=dri
   # controller support
   - --device=all
   # X11 + XShm access
