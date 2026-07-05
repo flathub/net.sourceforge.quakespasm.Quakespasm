@@ -28,8 +28,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/libxmp/libxmp/
-        tag: libxmp-4.7.0
-        commit: 8a4fdf7d09aedc921de537853b59e1d15b534f24
+        tag: libxmp-4.7.1
+        commit: 12f76e4bf1dd6765e3bf46cbc1ff35c4a4551671
         x-checker-data:
           type: git
           tag-pattern: ^libxmp-(.*)$
