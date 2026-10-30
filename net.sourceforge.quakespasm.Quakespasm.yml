@@ -40,11 +40,11 @@ modules:
         url: https://github.com/sezero/quakespasm
         # commenting out until a release has been made that includes the appstream and desktop files
         # tag: quakespasm-0.96.1
-        commit: cc32abe09ed417ce3be10af300d2dc2f686349ba
+        commit: e8795a79273f2823661727265d0617106e282bea
         x-checker-data:
           type: git
           tag-pattern: ^quakespasm-(.*)$
-        tag: quakespasm-0.96.3
+        tag: quakespasm-0.97.0
       - type: script
         dest-filename: quakespasm.sh
         commands:
